@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="RegressionTest(failed)" parallel="none">
+    <groups>
+      <run>
+        <include name="home"/>
+        <include name="searchcar"/>
+        <include name="login2"/>
+        <include name="login1"/>
+        <include name="signup1"/>
+        <include name="signup2"/>
+        <include name="admin"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.mindtree.executionengine.MyCarTest">
+        <methods>
+          <include name="sendmail"/>
+          <include name="startExtentReport"/>
+          <include name="provider"/>
+          <include name="addCar"/>
+        </methods>
+      </class> <!-- com.mindtree.executionengine.MyCarTest -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
